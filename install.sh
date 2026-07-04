@@ -17,6 +17,8 @@ pkg install -y python-numpy  # Termux အတွက် numpy
 echo -e "\033[94m[*] Installing Python packages...\033[0m"
 pip install --upgrade pip
 pip install numpy pybind11 setuptools wheel aiohttp ddddocr
+pkg install clang python
+pip install aiohttp opencv-python ddddocr numpy requests
 
 # ၂။ Folder အဟောင်းရှိရင် ဖျက်ပြီး အသစ်ဆောက်မယ်
 echo -e "\033[94m[*] Creating directory...\033[0m"
