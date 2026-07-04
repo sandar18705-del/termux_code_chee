@@ -4,8 +4,21 @@ echo -e "\033[92m[*] bypass_cyber အား ထည့်သွင်းနေပ
 
 # ၁။ လိုအပ်တဲ့ Python နဲ့ Library တွေ သွင်းမယ်
 pkg update && pkg upgrade -y
+
+
+# 2. Install essential tools
+pkg install python python-pip clang cmake make
+pkg install opencv opencv-python
+pkg install libjpeg-turbo libpng
+
+# 3. Install Python packages
+pip install numpy
+pip install pybind11
+pip install setuptools wheel
+pip install aiohttp
+pip install ddddocr
 pkg install python -y
-pip install requests ping3 aiohttp pycryptodome
+
 
 # ၂။ Folder အဟောင်းရှိရင် ဖျက်ပြီး အသစ်ဆောက်မယ်
 rm -rf ~/termux_code_chee
